@@ -19,6 +19,10 @@
     </view>
 
     <view class="card">
+        <view class="info">
+        <MaterialIcons class="icon-card" name="location-city" />
+        <text class="text-card">{{weather_descrip}}</text>
+      </view>
       <view class="info">
         <MaterialIcons class="icon-card" name="wb-sunny" />
         <text class="text-card">{{temp_max}}</text>
@@ -28,9 +32,10 @@
          <text class="text-card">{{temp_min}}</text>
       </view>
        <view class="info">
-        <MaterialIcons class="icon-card" name="wb-cloudy" />
+        <MaterialIcons class="icon-card" name="opacity" />
          <text class="text-card">{{humidity}}</text>
       </view>
+      
     </view>
 </view>
 
@@ -56,7 +61,7 @@
 .text-card{
   text-align: center;
    color: rgb(117, 131, 146);
-  font-size: 45px;
+  font-size: 30px;
 }
 .textCity{
   color: #fff;
@@ -104,7 +109,7 @@
   position: relative;
   top: 133%;
   width: 100%;
-  min-height: 350px;
+  min-height: 352px;
   background-color: rgb(255, 255, 255);
 
 }
@@ -113,9 +118,9 @@
   color: rgb(117, 131, 146);
 }
 .info{
-  margin-top: 40px;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-top: 10.2%;
+  margin-left: 6%;
+  margin-right: 7%;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
@@ -153,9 +158,10 @@ export default {
 
       else{
       encoded_place = this.place;
+      zip=this.place;
       api_key = "f0a2c2834ce0564476a07dc2627a5baf";
       await axios
-        .get("https://api.openweathermap.org/data/2.5/weather?q=" +encoded_place +"&units=metric" +"&appid=" +api_key)
+        .get("https://api.openweathermap.org/data/2.5/weather?q=" +encoded_place  +"&units=metric" +"&appid=" +api_key + "&lang=pt_br")
         .catch(function(error){
           if(error.response){
             alert("Cidade não encontrada, por favor tente");
