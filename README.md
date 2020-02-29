@@ -21,4 +21,4 @@ icone de gota representa a umidade.
 ## dica
 vá além das cidades do Brasil, teste cidades de diversos países como Londres, Nova Iorque etc..
 
-
+![alt text](https://raw.githubusercontent.com/username/projectname/branch/img.jpg)
