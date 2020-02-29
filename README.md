@@ -1,5 +1,5 @@
 # TesteDourasoft
-App para ver o clima
+App para ver o clima.
 
 ## Algumas Explicações!
 Se porventura houver algum erro de sintaxe peço desculpas mas a recém aprendi a usar VueNative, nunca tinha usado ele antes então tive
@@ -13,9 +13,10 @@ O app está funcionando corretamente, ele mostra o clima de qualquer cidade, e c
 apresenta um alert avisando que nada foi digitado o mesmo ocorre quando é digitado uma cidade que não existe na base de dados da API.
 
 ## Icones
+icone de casa representa a descrição do tempo na localidade
 O icone de sol representa a temperatua máxima
 O icone de neve representa temperatura miníma
-O icone de Nuvem representa a umidade
+O icone de gota representa a umidade
 
 ## dica
 vá além das cidades do Brasil, teste cidades de diversos países como Londres, Nova Iorque etc..
