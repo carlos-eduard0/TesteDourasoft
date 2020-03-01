@@ -7,9 +7,10 @@
         v-model="place"
         placeholder="Informe o nome da cidade"
         placeholderTextColor="#A9A9A9"
+        autoCapitalize="words"
       />
     </view>
-    <TouchableOpacity class="btn" :on-press="getWeatherData" required>
+    <TouchableOpacity class="btn" :on-press="getWeatherData" >
       <MaterialIcons class="icon" name="search" />
     </TouchableOpacity>
   </view>
