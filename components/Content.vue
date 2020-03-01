@@ -165,7 +165,7 @@ export default {
         .get("https://api.openweathermap.org/data/2.5/weather?q=" +encoded_place  +"&units=metric" +"&appid=" +api_key + "&lang=pt_br")
         .catch(function(error){
           if(error.response){
-            alert("Cidade não encontrada, por favor tente");
+            alert("Cidade não encontrada, por favor tente novamente");
           }
         })
         .then(response => {
