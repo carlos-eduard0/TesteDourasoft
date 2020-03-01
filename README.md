@@ -21,4 +21,5 @@ icone de gota representa a umidade.
 ## dica
 vá além das cidades do Brasil, teste cidades de diversos países como Londres, Nova Iorque etc..
 
-
+## Print do app no meu celular
+![Print do app funcionando](https://github.com/carlos-eduard0/TesteDourasoft/blob/master/img.jpg)
